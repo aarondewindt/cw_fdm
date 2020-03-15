@@ -11,7 +11,6 @@ add_subdirectory(lib/fmt)
 add_subdirectory(tests)
 
 add_library(cw_sim SHARED
-
         src/variables_database.cpp
         src/cw.cpp
         src/exception.cpp

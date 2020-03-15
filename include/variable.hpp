@@ -65,7 +65,7 @@ namespace cw::sim {
 
         template<class T>
         void return_mutable_token(MutableToken<T>& token) {
-            token.deactivate();
+            token.is_mutable = false;
             mutable_token_created = false;
         }
 

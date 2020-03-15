@@ -16,9 +16,7 @@ namespace cw::sim {
 
         Variable& variable;
         explicit MutableToken(Variable& variable) : variable(variable) { };
-        void deactivate() {
-            is_mutable = false;
-        };
+
         friend Variable;
     public:
         MutableToken() = delete;
@@ -31,6 +29,10 @@ namespace cw::sim {
         Variable& get_variable() {
             return variable;
         }
+
+        void deactivate() {
+            variable.return_mutable_token(*this);
+        };
 
         T get() {
             return std::any_cast<T>(variable.value);
