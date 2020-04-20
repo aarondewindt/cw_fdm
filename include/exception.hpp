@@ -14,6 +14,7 @@
 
 
 namespace cw::sim {
+    /// \brief Generic exception type used as base by all errors thrown by the simulation.
     class SimError : public std::exception {
         const std::type_info& exception_type_id;
         std::string msg;
@@ -29,12 +30,15 @@ namespace cw::sim {
         [[nodiscard]] const char* what() const noexcept override;
     };
 
+    /// \brief Thrown if an unexpected type was encountered.
     class TypeError : public SimError {
     public:
         TypeError(const std::type_info& expected_type, const std::type_info& actual_type);
         TypeError(const std::string& format, const std::type_info& type_1, const std::type_info& type_2);
     };
 
+    /// \brief Thrown if there is an attempt to create a second mutable token
+    ///        linked to the same variable.
     class MultipleMutableTokensCreatedError : public SimError {
     public:
         explicit MultipleMutableTokensCreatedError(const std::string& message);
@@ -43,6 +47,8 @@ namespace cw::sim {
     template<class T>
     class MutableToken;
 
+    /// \brief Thrown if the is an attempt to mutate a variable through a
+    ///        deactivated mutable token.
     template<class T>
     class MutatingVariableUsingDeactivatedMutableTokenError : public SimError {
         MutableToken<T>& mutable_token;
@@ -57,6 +63,9 @@ namespace cw::sim {
 
     class Variable;
 
+    /// \brief Thrown if the an attempt was made to create an immutable token to a non-existing
+    ///        variable. This could happen if a module reading the variable is called before
+    ///        the module writing to it.
     class CannotCreateImmutableTokenForNonExistingVariableError : public SimError {
         std::string variable_name;
     public:

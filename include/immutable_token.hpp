@@ -9,9 +9,22 @@
 
 
 namespace cw::sim {
+    /// \brief Token with a read only access to its variable.
+    /// \tparam T Variable value type.
     template<class T>
     class ImmutableToken {
+        /// Variable the token is linked to.
         Variable& variable;
+
+        /// \brief Constructor.
+        ///
+        /// For safety we want all tokens to be created by their variable. This way
+        /// the variable is able to keep track of all its tokens and which ones have
+        /// what kind of access.
+        /// Tho achieve this the constructor to this class is made private and the
+        /// Variable class a friend.
+        ///
+        /// \param variable
         explicit ImmutableToken(Variable& variable) : variable(variable) { };
         friend Variable;
     public:
@@ -22,10 +35,14 @@ namespace cw::sim {
         ImmutableToken& operator=(const ImmutableToken&) = delete;
         ImmutableToken& operator=(ImmutableToken&& other) noexcept = default;
 
+        /// Get the variable value.
+        /// \return Variable value.
         T get() {
             return std::any_cast<T>(variable.value);
         }
 
+        /// \brief Variable type information.
+        /// \return
         const std::type_info& type() {
             return typeid(T);
         }

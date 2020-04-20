@@ -23,10 +23,15 @@ namespace cw::sim {
     class ImmutableToken;
 
     class Variable {
-        std::string name;
-        bool mutable_token_created = false;
+        std::string name;  ///< \brief Variable name
+        bool mutable_token_created = false;  ///< \brief True an active mutable token to this variable exists.
 
     public:
+        /// \brief Initializes a new variable.
+        ///
+        /// \tparam T Variable value type.
+        /// \param name Variable name
+        /// \param initial_value Initial value.
         template<class T>
         Variable(std::string name, T& initial_value) : name(std::move(name)), type_info(typeid(T)) {
             value = initial_value;
@@ -39,13 +44,25 @@ namespace cw::sim {
         Variable& operator=(const Variable&) = delete;
         Variable& operator=(Variable&& other) noexcept = delete;
 
-        const std::type_info& type_info;
-        std::any value;
+        const std::type_info& type_info; ///< Type information of the variable value type.
+        std::any value;  ///< Variable value.
 
+        /// \brief Returns the variable name.
+        /// \return Variable name
         std::string& get_name() {
             return name;
         }
 
+        /// \brief Creates a mutable token linked to the variable.
+        ///
+        /// \warning In most cases tokens should be created by the VariableDatabase and
+        ///          not this function.
+        ///
+        /// \tparam T Expected variable value type.
+        /// \exception cw::sim::TypeError Type T does not match the variable value type.
+        /// \exception cw::sim::MultipleMutableTokensCreatedError If an active mutable token
+        ///            already exists for this variable.
+        /// \return Mutable token linked to the variable.
         template<class T>
         MutableToken<T> create_mutable_token() {
             if (mutable_token_created) {
@@ -63,12 +80,29 @@ namespace cw::sim {
             return MutableToken<T>(*this);
         };
 
+        /// \brief Deactivates a mutable token linked to the variable.
+        /// After deactivation the token cannot mutate the variable's value, but
+        /// is still able to read it.
+        ///
+        /// \tparam T Derived, type of the variable value.
+        /// \param token Mutable token to be returned.
         template<class T>
         void return_mutable_token(MutableToken<T>& token) {
+            if (token.variable != this) {
+                // TODO: Add some error msg here.
+            }
             token.is_mutable = false;
             mutable_token_created = false;
         }
 
+        /// \brief Create immutable token linked to the variable.
+        ///
+        /// \warning In most cases tokens should be created by the VariableDatabase and
+        ///          not this function.
+        ///
+        /// \tparam T Expected variable value type.
+        /// \exception cw::sim::TypeError Type T does not match the variable value type.
+        /// \return Immutable token linked to the variable.
         template<class T>
         ImmutableToken<T> create_immutable_token() {
             if ((type_info != typeid(T))) {

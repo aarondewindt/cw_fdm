@@ -1483,22 +1483,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7008a6ba-2d98-41fb-9e4b-05995d8ba2ad" name="Default Changelist" comment="Added force value parameter to the create_mutable_token method.">
-      <change afterPath="$PROJECT_DIR$/include/continuous_handler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/discreet_handler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/handler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/module.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/boost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spike/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spike/qwert.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/continuous_handler.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/discreet_handler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cw_fdm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cw_fdm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7008a6ba-2d98-41fb-9e4b-05995d8ba2ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/cw.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/cw.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/exception.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/exception.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/immutable_token.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/immutable_token.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/mutable_token.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/mutable_token.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/variable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/variable.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/variables_database.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/variables_database.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10345,7 +10337,7 @@
       <workItem from="1584203752168" duration="38127000" />
       <workItem from="1586851643372" duration="3859000" />
       <workItem from="1587396068641" duration="2510000" />
-      <workItem from="1587402421617" duration="5106000" />
+      <workItem from="1587402421617" duration="8648000" />
     </task>
     <task id="LOCAL-00001" summary="First version of the dynamic type variable database working.">
       <created>1584238006713</created>
@@ -10375,7 +10367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584240116259</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Got boost::numeric::odeint to work inside a notebook.">
+      <created>1587420637736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587420637736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -10398,9 +10397,14 @@
     <MESSAGE value="Added missing files." />
     <MESSAGE value="Added .gitignore file." />
     <MESSAGE value="Added force value parameter to the create_mutable_token method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added force value parameter to the create_mutable_token method." />
+    <MESSAGE value="Got boost::numeric::odeint to work inside a notebook." />
+    <option name="LAST_COMMIT_MESSAGE" value="Got boost::numeric::odeint to work inside a notebook." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2780" y="268" width="829" height="886" key="CommitChangelistDialog2" timestamp="1587420630431">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2780" y="268" width="829" height="886" key="CommitChangelistDialog2/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587420630431" />
     <state x="2911" y="390" width="424" height="491" key="FileChooserDialogImpl" timestamp="1586854177611">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
@@ -10426,10 +10430,10 @@
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2704" y="343" width="992" height="737" key="SettingsEditor/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1586859348230" />
-    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584240119650">
+    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1587420650941">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1584240119650" />
+    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587420650941" />
     <state x="2909" y="327" width="595" height="762" key="find.popup" timestamp="1587415746598">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>

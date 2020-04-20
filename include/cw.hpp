@@ -33,6 +33,7 @@ namespace cw {
     using f32 = float;
     using f64 = double;
 
+    // TODO: Move this function to utility.
     std::string get_type_name(const std::type_info& type_info);
 }
 
