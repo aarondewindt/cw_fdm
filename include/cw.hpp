@@ -12,15 +12,8 @@
 
 
 // Hack to add Tristan's span implementation to the C++17 standard library.
+#define TCB_SPAN_NAMESPACE_NAME std
 #include "tcb/span.hpp"
-namespace std {
-    using tcb::span;
-    using tcb::get;
-    using tcb::make_span;
-    using tcb::as_bytes;
-    using tcb::as_writable_bytes;
-    using tcb::dynamic_extent;
-}
 
 
 namespace cw {
