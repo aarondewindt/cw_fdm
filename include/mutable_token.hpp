@@ -10,17 +10,14 @@
 
 
 namespace cw::sim {
-
     /// \brief Token with a read and write access to its variable.
     /// \tparam T Variable value type.
     template<class T>
     class MutableToken {
-        /// True if the token is mutable, aka active. This is set to false when the
-        /// is deactivated/returned to the variable..
-        bool is_mutable = true;
-
         /// Variable the token is linked to.
         Variable& variable;
+
+        const u32 token_id;
 
         /// \brief Constructor.
         ///
@@ -31,7 +28,9 @@ namespace cw::sim {
         /// Variable class a friend.
         ///
         /// \param variable
-        explicit MutableToken(Variable& variable) : variable(variable) { };
+        explicit MutableToken(Variable& variable, u32 token_id) :
+            variable(variable),
+            token_id(token_id) { };
 
         friend Variable;
     public:
@@ -53,10 +52,14 @@ namespace cw::sim {
             variable.return_mutable_token(*this);
         };
 
+        bool is_active() {
+            return variable.is_mutable_token_active(*this);
+        }
+
         /// Get the variable value.
         /// \return Variable value.
         T get() {
-            return std::any_cast<T>(variable.value);
+            return variable.get<T>();
         }
 
         /// \brief Set the variable value.
@@ -65,11 +68,7 @@ namespace cw::sim {
         ///            token has already been deactivated.
         /// \param value new variable value.
         void set(T& value) {
-            if (is_mutable) {
-                variable.value = value;
-            } else {
-                throw MutatingVariableUsingDeactivatedMutableTokenError(*this);
-            }
+            variable.set<T>(*this, value);
         }
 
         /// \brief Set the variable value.

@@ -1484,13 +1484,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7008a6ba-2d98-41fb-9e4b-05995d8ba2ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/test_variables_and_tokens.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/continuous_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/continuous_handler.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/cw.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/cw.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/discreet_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/discreet_handler.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/exception.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/exception.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/immutable_token.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/immutable_token.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/mutable_token.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/mutable_token.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/variable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/variable.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/variables_database.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/variables_database.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discreet_handler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/discreet_handler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_factorial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_factorial.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1537,7 +1542,7 @@
       <recent name="$PROJECT_DIR$/references" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.qwert">
+  <component name="RunManager" selected="Catch.Scenario: Variables can be created and accessed">
     <configuration name="Factorials are computed" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw_sim" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cw_sim" RUN_TARGET_NAME="tests" TEST_CLASS="[factorial]" TEST_METHOD="Factorials are computed" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -1545,6 +1550,12 @@
       </method>
     </configuration>
     <configuration name="Get type name" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw_sim" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cw_sim" RUN_TARGET_NAME="tests" TEST_METHOD="Get type name" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Variables can be created and accessed" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw_sim" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cw_sim" RUN_TARGET_NAME="tests" TEST_CLASS="[token][variable]" TEST_METHOD="Scenario: Variables can be created and accessed" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -8850,9 +8861,24 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="cw_fdm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Catch.Factorials are computed" />
       <item itemvalue="Catch.Get type name" />
+      <item itemvalue="Catch.Scenario: Variables can be created and accessed" />
       <item itemvalue="CMake Application.BVH" />
       <item itemvalue="CMake Application.BVH_1" />
       <item itemvalue="CMake Application.BVH_2" />
@@ -10313,12 +10339,15 @@
       <item itemvalue="CMake Application.visitor_9" />
       <item itemvalue="CMake Application.zerosized" />
       <item itemvalue="CMake Application.qwert" />
+      <item itemvalue="Python tests.Unittests in tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Catch.Scenario: Variables can be created and accessed" />
+        <item itemvalue="Catch.Factorials are computed" />
+        <item itemvalue="Python tests.Unittests in tests" />
         <item itemvalue="CMake Application.qwert" />
         <item itemvalue="Catch.Get type name" />
-        <item itemvalue="Catch.Factorials are computed" />
       </list>
     </recent_temporary>
   </component>
@@ -10337,7 +10366,7 @@
       <workItem from="1584203752168" duration="38127000" />
       <workItem from="1586851643372" duration="3859000" />
       <workItem from="1587396068641" duration="2510000" />
-      <workItem from="1587402421617" duration="8648000" />
+      <workItem from="1587402421617" duration="24581000" />
     </task>
     <task id="LOCAL-00001" summary="First version of the dynamic type variable database working.">
       <created>1584238006713</created>
@@ -10374,7 +10403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587420637736</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added documentation.">
+      <created>1587424166411</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587424166411</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -10398,42 +10434,59 @@
     <MESSAGE value="Added .gitignore file." />
     <MESSAGE value="Added force value parameter to the create_mutable_token method." />
     <MESSAGE value="Got boost::numeric::odeint to work inside a notebook." />
-    <option name="LAST_COMMIT_MESSAGE" value="Got boost::numeric::odeint to work inside a notebook." />
+    <MESSAGE value="Added documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2780" y="268" width="829" height="886" key="CommitChangelistDialog2" timestamp="1587420630431">
+    <state x="2780" y="268" width="829" height="886" key="CommitChangelistDialog2" timestamp="1587424163008">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2780" y="268" width="829" height="886" key="CommitChangelistDialog2/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587420630431" />
+    <state x="2780" y="268" width="829" height="886" key="CommitChangelistDialog2/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587424163008" />
     <state x="2911" y="390" width="424" height="491" key="FileChooserDialogImpl" timestamp="1586854177611">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="743" y="286" width="424" height="491" key="FileChooserDialogImpl/0.0.1920.1056@0.0.1920.1056" timestamp="1583359876439" />
     <state x="2911" y="390" width="424" height="491" key="FileChooserDialogImpl/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1586854177611" />
-    <state width="2518" height="394" key="GridCell.Tab.0.bottom" timestamp="1587415236479">
+    <state width="2518" height="394" key="GridCell.Tab.0.bottom" timestamp="1587516093232">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="394" key="GridCell.Tab.0.bottom/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587415236479" />
-    <state width="2518" height="394" key="GridCell.Tab.0.center" timestamp="1587415236479">
+    <state width="2518" height="394" key="GridCell.Tab.0.bottom/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587516093232" />
+    <state width="2518" height="394" key="GridCell.Tab.0.center" timestamp="1587516093232">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="394" key="GridCell.Tab.0.center/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587415236479" />
-    <state width="2518" height="394" key="GridCell.Tab.0.left" timestamp="1587415236479">
+    <state width="2518" height="394" key="GridCell.Tab.0.center/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587516093232" />
+    <state width="2518" height="394" key="GridCell.Tab.0.left" timestamp="1587516093232">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="394" key="GridCell.Tab.0.left/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587415236479" />
-    <state width="2518" height="394" key="GridCell.Tab.0.right" timestamp="1587415236479">
+    <state width="2518" height="394" key="GridCell.Tab.0.left/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587516093232" />
+    <state width="2518" height="394" key="GridCell.Tab.0.right" timestamp="1587516093232">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="394" key="GridCell.Tab.0.right/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587415236479" />
+    <state width="2518" height="394" key="GridCell.Tab.0.right/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587516093232" />
+    <state width="2518" height="487" key="GridCell.Tab.1.bottom" timestamp="1587514633045">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="487" key="GridCell.Tab.1.bottom/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587514633045" />
+    <state width="2518" height="487" key="GridCell.Tab.1.center" timestamp="1587514633045">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="487" key="GridCell.Tab.1.center/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587514633045" />
+    <state width="2518" height="487" key="GridCell.Tab.1.left" timestamp="1587514633045">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="487" key="GridCell.Tab.1.left/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587514633045" />
+    <state width="2518" height="487" key="GridCell.Tab.1.right" timestamp="1587514633045">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="487" key="GridCell.Tab.1.right/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587514633045" />
     <state x="2704" y="343" width="992" height="737" key="SettingsEditor" timestamp="1586859348230">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2704" y="343" width="992" height="737" key="SettingsEditor/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1586859348230" />
-    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1587420650941">
+    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1587424197263">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587420650941" />
+    <state x="2795" y="444" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587424197263" />
     <state x="2909" y="327" width="595" height="762" key="find.popup" timestamp="1587415746598">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
@@ -10446,5 +10499,9 @@
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2864" y="329" key="run.anything.popup/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1584231095692" />
+    <state x="2863" y="323" width="672" height="678" key="search.everywhere.popup" timestamp="1587514892790">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2863" y="323" width="672" height="678" key="search.everywhere.popup/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587514892790" />
   </component>
 </project>

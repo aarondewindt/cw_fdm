@@ -61,7 +61,7 @@ namespace cw::sim {
                      typeid(MutatingVariableUsingDeactivatedMutableTokenError)) { };
     };
 
-    class Variable;
+
 
     /// \brief Thrown if the an attempt was made to create an immutable token to a non-existing
     ///        variable. This could happen if a module reading the variable is called before
@@ -70,6 +70,48 @@ namespace cw::sim {
         std::string variable_name;
     public:
         explicit CannotCreateImmutableTokenForNonExistingVariableError(const std::string& variable_name);
+    };
+
+    /// \brief Thrown if the is an attempt to mutate a variable through a
+    ///        deactivated mutable token.
+    template<class T, class Var>
+    class ReturningMutableTokenToWrongVariableError : public SimError {
+        MutableToken<T>& mutable_token;
+    public:
+        explicit ReturningMutableTokenToWrongVariableError(MutableToken<T>& mutable_token, Var& variable) :
+                mutable_token(mutable_token),
+                SimError(fmt::format("Returning mutable token for variable `{}` to variable `{}`.",
+                                     mutable_token.get_variable().get_name(),
+                                     variable.get_name()),
+                         typeid(ReturningMutableTokenToWrongVariableError)) { };
+    };
+
+    /// \brief Thrown if the is an attempt to mutate a variable through a
+    ///        deactivated mutable token.
+    template<class T, class Var>
+    class CheckingTokenActivityWithWrongVariable : public SimError {
+        MutableToken<T>& mutable_token;
+    public:
+        explicit CheckingTokenActivityWithWrongVariable(MutableToken<T>& mutable_token, Var& variable) :
+                mutable_token(mutable_token),
+                SimError(fmt::format("Check mutable token for variable `{}` activity with variable `{}`.",
+                                     mutable_token.get_variable().get_name(),
+                                     variable.get_name()),
+                         typeid(CheckingTokenActivityWithWrongVariable)) { };
+    };
+
+    /// \brief Thrown if the is an attempt to mutate a variable through a
+    ///        deactivated mutable token.
+    template<class T, class Var>
+    class SettingVariableUsingWrongTokenError : public SimError {
+        MutableToken<T>& mutable_token;
+    public:
+        explicit SettingVariableUsingWrongTokenError(MutableToken<T>& mutable_token, Var& variable) :
+                mutable_token(mutable_token),
+                SimError(fmt::format("Setting variable `{}` using token for variable `{}`.",
+                                     variable.get_name(),
+                                     mutable_token.get_variable().get_name()),
+                         typeid(SettingVariableUsingWrongTokenError)) { };
     };
 }
 

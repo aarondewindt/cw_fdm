@@ -3,6 +3,7 @@
 add_executable(tests
         main.cpp
         test_factorial.cpp
+        test_variables_and_tokens.cpp
         cw.cpp)
 
 target_link_libraries(tests Catch2::Catch2)

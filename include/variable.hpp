@@ -24,7 +24,10 @@ namespace cw::sim {
 
     class Variable {
         std::string name;  ///< \brief Variable name
-        bool mutable_token_created = false;  ///< \brief True an active mutable token to this variable exists.
+        bool active_mutable_token_exists = false;
+        u32 active_mutable_token_id = 0;  ///< \brief True an active mutable token to this variable exists.
+        std::any value;  ///< Variable value.
+        const std::type_info& type_info; ///< Type information of the variable value type.
 
     public:
         /// \brief Initializes a new variable.
@@ -37,15 +40,22 @@ namespace cw::sim {
             value = initial_value;
         };
 
+        /// \brief Initializes a new variable.
+        ///
+        /// \tparam T Variable value type.
+        /// \param name Variable name
+        /// \param initial_value Initial value.
+        template<class T>
+        Variable(std::string name, T&& initial_value) : name(std::move(name)), type_info(typeid(T)) {
+            value = initial_value;
+        };
+
         Variable() = delete;
         ~Variable() = default;
         Variable(const Variable&) = delete;
         Variable(Variable&&) noexcept = default;
         Variable& operator=(const Variable&) = delete;
         Variable& operator=(Variable&& other) noexcept = delete;
-
-        const std::type_info& type_info; ///< Type information of the variable value type.
-        std::any value;  ///< Variable value.
 
         /// \brief Returns the variable name.
         /// \return Variable name
@@ -65,7 +75,7 @@ namespace cw::sim {
         /// \return Mutable token linked to the variable.
         template<class T>
         MutableToken<T> create_mutable_token() {
-            if (mutable_token_created) {
+            if (active_mutable_token_exists) {
                 throw MultipleMutableTokensCreatedError(
                         std::string("Only one mutable token may exist at a time."));
             }
@@ -75,9 +85,8 @@ namespace cw::sim {
                         "It's not possible to create a mutable token of type '{{type_1}}'. "
                         "Variable '{}' is of type '{{type_2}}'."_format(name), typeid(T), type_info);
             }
-
-            mutable_token_created = true;
-            return MutableToken<T>(*this);
+            active_mutable_token_exists =  true;
+            return MutableToken<T>(*this, active_mutable_token_id);;
         };
 
         /// \brief Deactivates a mutable token linked to the variable.
@@ -88,11 +97,11 @@ namespace cw::sim {
         /// \param token Mutable token to be returned.
         template<class T>
         void return_mutable_token(MutableToken<T>& token) {
-            if (token.variable != this) {
-                // TODO: Add some error msg here.
+            if (&(token.variable) != (this)) {
+                throw ReturningMutableTokenToWrongVariableError(token, *this);
             }
-            token.is_mutable = false;
-            mutable_token_created = false;
+            active_mutable_token_exists = false;
+            active_mutable_token_id++;
         }
 
         /// \brief Create immutable token linked to the variable.
@@ -112,6 +121,43 @@ namespace cw::sim {
             }
 
             return ImmutableToken<T>(*this);
+        }
+
+        template<class T>
+        bool is_mutable_token_active(MutableToken<T>& token) {
+            if (&(token.variable) != (this)) {
+                throw CheckingTokenActivityWithWrongVariable(token, *this);
+            }
+            return active_mutable_token_id == token.token_id;
+        }
+
+        template<class T>
+        void set(MutableToken<T>& token, T& new_value) {
+            if (&(token.variable) != (this)) {
+                throw SettingVariableUsingWrongTokenError(token, *this);
+            }
+
+            if (active_mutable_token_id != token.token_id) {
+                throw MutatingVariableUsingDeactivatedMutableTokenError(token);
+            }
+
+            value = new_value;
+        }
+
+        template<class T>
+        void set(MutableToken<T>& token, T&& new_value) {
+            set(token, new_value);
+        }
+
+        template<class T>
+        T get() {
+            try {
+                return std::any_cast<T>(value);
+            }
+            catch(const std::bad_any_cast& e) {
+                throw TypeError("Variable '{}' is of type '{{type_2}}', but tried "
+                        "to get value of type '{{type_1}}'."_format(name), typeid(T), type_info);
+            }
         }
 
         const std::type_info& type() {

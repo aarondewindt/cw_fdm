@@ -2,8 +2,8 @@
 // Created by adewindt on 3/15/20.
 //
 
-#ifndef CW_SIM_DISCREET_HANDLER_H
-#define CW_SIM_DISCREET_HANDLER_H
+#ifndef CW_SIM_DISCREET_HANDLER_HPP
+#define CW_SIM_DISCREET_HANDLER_HPP
 
 #include <functional>
 
@@ -21,4 +21,4 @@ namespace cw::sim {
     };
 }
 
-#endif //CW_SIM_DISCREET_HANDLER_H
+#endif //CW_SIM_DISCREET_HANDLER_HPP

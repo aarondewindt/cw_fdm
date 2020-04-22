@@ -10,8 +10,6 @@
 #include <string>
 #include <typeinfo>
 
-
-// Hack to add Tristan's span implementation to the C++17 standard library.
 #define TCB_SPAN_NAMESPACE_NAME std
 #include "tcb/span.hpp"
 

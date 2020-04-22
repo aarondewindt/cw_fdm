@@ -30,10 +30,11 @@ add_library(cw_sim SHARED
     include/variable.hpp
     include/module.h
     include/handler.h
-    include/continuous_handler.h
-    include/discreet_handler.h
-    src/discreet_handler.cpp
-    src/continuous_handler.cpp)
+#    include/continuous_handler.hpp
+#    include/discreet_handler.hpp
+#    src/discreet_handler.cpp
+#    src/continuous_handler.cpp
+        )
 
 target_include_directories(cw_sim PUBLIC include)
 #target_include_directories(cw_sim PUBLIC lib/odeint/include)
