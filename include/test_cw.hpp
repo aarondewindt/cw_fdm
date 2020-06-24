@@ -2,15 +2,14 @@
 // Created by adewindt on 3/8/20.
 //
 
-#ifndef CW_SIM_CW_HPP
-#define CW_SIM_CW_HPP
+#ifndef CW_SIM_TEST_CW_HPP
+#define CW_SIM_TEST_CW_HPP
 
 #include <cstdint>
 #include <cstddef>
 #include <string>
 #include <typeinfo>
 
-#define TCB_SPAN_NAMESPACE_NAME std
 #include "tcb/span.hpp"
 
 
@@ -35,4 +34,4 @@ namespace cw {
     std::string get_type_name(const std::type_info& type_info);
 }
 
-#endif //CW_SIM_CW_HPP
+#endif //CW_SIM_TEST_CW_HPP

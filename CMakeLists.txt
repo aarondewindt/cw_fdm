@@ -23,7 +23,7 @@ add_library(cw_sim SHARED
     src/exception.cpp
 
     include/variables_database.hpp
-    include/cw.hpp
+        include/test_cw.hpp
     include/exception.hpp
     include/mutable_token.hpp
     include/immutable_token.hpp

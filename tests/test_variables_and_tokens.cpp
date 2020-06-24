@@ -3,7 +3,7 @@
 //
 
 #include "catch2/catch.hpp"
-#include "cw.hpp"
+#include "test_cw.hpp"
 #include "variable.hpp"
 #include "mutable_token.hpp"
 #include "immutable_token.hpp"
@@ -176,6 +176,17 @@ namespace cw::sim::unittests {
                     }
                 }
 
+            }
+
+            WHEN("Create mutable token from the variable with the incorrect type") {
+                CHECK_THROWS_WITH(variable.create_mutable_token<i32>(),
+                        "cw::sim::TypeError: It's not possible to create a mutable "
+                        "token of type 'int'. Variable 'foo' is of type 'double'.");
+            }
+
+            WHEN("Create a immutable token from the variable using the correct type.")  {
+                auto immutable_token = variable.create_immutable_token<f64>();
+                
             }
         }
     }

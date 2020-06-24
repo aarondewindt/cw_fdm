@@ -52,10 +52,13 @@ namespace cw::sim {
                                                              std::forward_as_tuple(name),
                                                              std::forward_as_tuple(name, initial_value));
             Variable& variable = iter->second;
+
+            auto token = variable.create_mutable_token<T>();
+
             if (!new_created) {
                 if (force_value) {
                     if (typeid(T) == variable.type()) {
-                        variable.value = initial_value;
+                         variable.set(token, initial_value);
                     } else {
                         throw TypeError(fmt::format("Cannot create new mutable token of type '{{type_1}} for "
                                         "existing variable '{name}' of type {{type_2}}.", variable.get_name()),
@@ -63,7 +66,8 @@ namespace cw::sim {
                     }
                 }
             }
-            return variable.create_mutable_token<T>();
+
+            return token;
         };
 
         /// \brief Create new mutable token linked to the variable with the given name.

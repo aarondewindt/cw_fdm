@@ -4,7 +4,7 @@ add_executable(tests
         main.cpp
         test_factorial.cpp
         test_variables_and_tokens.cpp
-        cw.cpp)
+        test_cw.cpp)
 
 target_link_libraries(tests Catch2::Catch2)
 target_link_libraries (tests Eigen3::Eigen)

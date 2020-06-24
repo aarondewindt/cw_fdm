@@ -6,7 +6,7 @@
 #include <iostream>
 
 #include "catch2/catch.hpp"
-#include "cw.hpp"
+#include "test_cw.hpp"
 #include "fmt/core.h"
 
 #include "Eigen/Dense"
