@@ -11,11 +11,11 @@ add_subdirectory(lib/eigen)
 add_subdirectory(lib/span)
 add_subdirectory(lib/fmt)
 
-#set(Boost_USE_STATIC_LIBS OFF)
-#set(Boost_USE_MULTITHREADED ON)
-#set(Boost_USE_STATIC_RUNTIME OFF)
-#find_package(Boost 1.67 REQUIRED COMPONENTS filesystem)
-#message(STATUS "Boost version: ${Boost_VERSION}")
+set(Boost_USE_STATIC_LIBS OFF)
+set(Boost_USE_MULTITHREADED ON)
+set(Boost_USE_STATIC_RUNTIME OFF)
+find_package(Boost 1.67 REQUIRED COMPONENTS filesystem)
+message(STATUS "Boost version: ${Boost_VERSION}")
 
 add_library(cw_sim SHARED
     src/variables_database.cpp
@@ -23,7 +23,7 @@ add_library(cw_sim SHARED
     src/exception.cpp
 
     include/variables_database.hpp
-        include/test_cw.hpp
+    include/test_cw.hpp
     include/exception.hpp
     include/mutable_token.hpp
     include/immutable_token.hpp

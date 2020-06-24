@@ -1489,18 +1489,152 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7008a6ba-2d98-41fb-9e4b-05995d8ba2ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/cw.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/test_cw.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/discreet_handler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/discreet_handler.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/exception.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/exception.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/variables_database.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/variables_database.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/std_any_experiments.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/spike/std_any_experiments.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cw.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/immutable_token.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/immutable_token.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/adjoint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/adjoint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/array_cwise.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/array_cwise.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/array_for_matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/array_for_matrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/array_of_string.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/array_of_string.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/array_replicate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/array_replicate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/array_reverse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/array_reverse.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/bandmatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/bandmatrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/basicstuff.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/basicstuff.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/bdcsvd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/bdcsvd.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/block.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/block.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/cholesky.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/cholesky.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/commainitializer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/commainitializer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/conservative_resize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/conservative_resize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/constructor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/constructor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/corners.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/corners.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/ctorleak.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/ctorleak.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/denseLM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/denseLM.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/dense_storage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/dense_storage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/determinant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/determinant.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/diagonal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/diagonal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/diagonal_matrix_variadic_ctor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/diagonal_matrix_variadic_ctor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/diagonalmatrices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/diagonalmatrices.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/dontalign.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/dontalign.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/dynalloc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/dynalloc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/eigen2support.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/eigen2support.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/eigensolver_complex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/eigensolver_complex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/eigensolver_generalized_real.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/eigensolver_generalized_real.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/eigensolver_generic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/eigensolver_generic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/eigensolver_selfadjoint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/eigensolver_selfadjoint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/evaluators.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/evaluators.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/exceptions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/exceptions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/fastmath.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/fastmath.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/first_aligned.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/first_aligned.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_alignedbox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_alignedbox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_eulerangles.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_eulerangles.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_homogeneous.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_homogeneous.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_hyperplane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_hyperplane.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_orthomethods.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_orthomethods.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_parametrizedline.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_parametrizedline.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_quaternion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_quaternion.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/geo_transformations.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/geo_transformations.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/gpu_basic.cu" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/gpu_basic.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/half_float.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/half_float.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/hessenberg.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/hessenberg.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/householder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/householder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/indexed_view.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/indexed_view.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/initializer_list_construction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/initializer_list_construction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/inplace_decomposition.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/inplace_decomposition.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/integer_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/integer_types.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/inverse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/inverse.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/io.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/io.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/is_same_dense.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/is_same_dense.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/jacobi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/jacobi.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/jacobisvd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/jacobisvd.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/linearstructure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/linearstructure.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/lu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/lu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/test_main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/mapped_matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/mapped_matrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/mapstaticmethods.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/mapstaticmethods.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/mapstride.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/mapstride.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/meta.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/meta.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/miscmatrices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/miscmatrices.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/mixingtypes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/mixingtypes.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/nestbyvalue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/nestbyvalue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/nesting_ops.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/nesting_ops.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/nomalloc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/nomalloc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/nullary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/nullary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/num_dimensions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/num_dimensions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/numext.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/numext.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/packetmath_test_shared.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/packetmath_test_shared.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/permutationmatrices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/permutationmatrices.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/prec_inverse_4x4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/prec_inverse_4x4.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_extra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_extra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_mmtr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_mmtr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_notemporary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_notemporary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_selfadjoint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_selfadjoint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_symm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_symm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_syrk.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_syrk.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_trmm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_trmm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_trmv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_trmv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/product_trsolve.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/product_trsolve.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/qr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/qr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/qr_colpivoting.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/qr_colpivoting.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/qr_fullpivoting.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/qr_fullpivoting.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/qtvector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/qtvector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/rand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/rand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/real_qz.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/real_qz.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/redux.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/redux.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/ref.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/ref.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/reshape.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/reshape.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/resize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/resize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/rvalue_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/rvalue_types.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/schur_complex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/schur_complex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/schur_real.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/schur_real.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/selfadjoint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/selfadjoint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/sizeof.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/sizeof.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/sizeoverflow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/sizeoverflow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/smallvectors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/smallvectors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/sparse.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/sparse.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/sparseLM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/sparseLM.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/sparse_ref.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/sparse_ref.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/special_numbers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/special_numbers.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stable_norm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stable_norm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stddeque.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stddeque.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stddeque_overload.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stddeque_overload.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stdlist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stdlist.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stdlist_overload.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stdlist_overload.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stdvector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stdvector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stdvector_overload.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stdvector_overload.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/stl_iterators.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/stl_iterators.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/swap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/swap.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/symbolic_index.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/symbolic_index.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/triangular.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/triangular.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/type_alias.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/type_alias.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/umeyama.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/umeyama.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/unalignedassert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/unalignedassert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/unalignedcount.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/unalignedcount.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/upperbidiagonalization.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/upperbidiagonalization.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/vectorization_logic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/vectorization_logic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/vectorwiseop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/vectorwiseop.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/visitor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/visitor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/test/zerosized.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/test/zerosized.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/BVH.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/BVH.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/EulerAngles.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/EulerAngles.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/FFTW.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/FFTW.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/NonLinearOptimization.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/NonLinearOptimization.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/NumericalDiff.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/NumericalDiff.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/alignedvector3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/alignedvector3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/autodiff.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/autodiff.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/autodiff_scalar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/autodiff_scalar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/bessel_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/bessel_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/levenberg_marquardt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/levenberg_marquardt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/matrix_function.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/matrix_function.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/matrix_functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/matrix_functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/polynomialsolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/polynomialsolver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/polynomialutils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/polynomialutils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/special_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/special_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eigen/unsupported/test/splines.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eigen/unsupported/test/splines.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/cw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cw.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cw.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_variables_and_tokens.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_variables_and_tokens.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1511,6 +1645,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -1547,7 +1682,13 @@
       <recent name="$PROJECT_DIR$/references" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in tests">
+  <component name="RunManager" selected="Catch.All in tests">
+    <configuration name="All in tests" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw_sim" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cw_sim" RUN_TARGET_NAME="tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Factorials are computed" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw_sim" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cw_sim" RUN_TARGET_NAME="tests" TEST_CLASS="[factorial]" TEST_METHOD="Factorials are computed" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -8866,21 +9007,23 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in tests" type="tests" factoryName="Unittests">
       <module name="cw_fdm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/cw_sim/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Catch.All in tests" />
       <item itemvalue="Catch.Factorials are computed" />
       <item itemvalue="Catch.Get type name" />
       <item itemvalue="Catch.Scenario: Variables can be created and accessed" />
@@ -10348,7 +10491,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in tests" />
         <item itemvalue="Catch.Scenario: Variables can be created and accessed" />
         <item itemvalue="Catch.Factorials are computed" />
         <item itemvalue="CMake Application.qwert" />
@@ -10381,7 +10523,7 @@
       <workItem from="1591997263587" duration="634000" />
       <workItem from="1592384601499" duration="214000" />
       <workItem from="1592991421761" duration="317000" />
-      <workItem from="1593023585107" duration="2929000" />
+      <workItem from="1593023585107" duration="6754000" />
     </task>
     <task id="LOCAL-00001" summary="First version of the dynamic type variable database working.">
       <created>1584238006713</created>
@@ -10461,6 +10603,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Unit tested the Variable and the MutableToken classes." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2658" y="366" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593027502365">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2658" y="366" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593027502365" />
     <state x="2780" y="268" width="829" height="886" key="CommitChangelistDialog2" timestamp="1587516201347">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
@@ -10470,25 +10616,25 @@
     </state>
     <state x="2911" y="390" key="FileChooserDialogImpl/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1589322943869" />
     <state x="2911" y="390" width="424" height="491" key="FileChooserDialogImpl/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1586854177611" />
-    <state width="2518" height="474" key="GridCell.Tab.0.bottom" timestamp="1593026751546">
+    <state width="2518" height="474" key="GridCell.Tab.0.bottom" timestamp="1593029024808">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="474" key="GridCell.Tab.0.bottom/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593026751546" />
+    <state width="2518" height="474" key="GridCell.Tab.0.bottom/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593029024808" />
     <state width="2518" height="474" key="GridCell.Tab.0.bottom/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587590825329" />
-    <state width="2518" height="474" key="GridCell.Tab.0.center" timestamp="1593026751546">
+    <state width="2518" height="474" key="GridCell.Tab.0.center" timestamp="1593029024807">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="474" key="GridCell.Tab.0.center/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593026751546" />
+    <state width="2518" height="474" key="GridCell.Tab.0.center/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593029024807" />
     <state width="2518" height="474" key="GridCell.Tab.0.center/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587590825329" />
-    <state width="2518" height="474" key="GridCell.Tab.0.left" timestamp="1593026751546">
+    <state width="2518" height="474" key="GridCell.Tab.0.left" timestamp="1593029024807">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="474" key="GridCell.Tab.0.left/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593026751546" />
+    <state width="2518" height="474" key="GridCell.Tab.0.left/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593029024807" />
     <state width="2518" height="474" key="GridCell.Tab.0.left/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587590825329" />
-    <state width="2518" height="474" key="GridCell.Tab.0.right" timestamp="1593026751546">
+    <state width="2518" height="474" key="GridCell.Tab.0.right" timestamp="1593029024807">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="474" key="GridCell.Tab.0.right/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593026751546" />
+    <state width="2518" height="474" key="GridCell.Tab.0.right/0.0.1920.1056/4480.390.1680.1050/1920.0.2560.1440@1920.0.2560.1440" timestamp="1593029024807" />
     <state width="2518" height="474" key="GridCell.Tab.0.right/1920.0.2560.1440/4480.390.1680.1050/0.0.1920.1056@1920.0.2560.1440" timestamp="1587590825329" />
     <state width="2518" height="487" key="GridCell.Tab.1.bottom" timestamp="1587514633045">
       <screen x="1920" y="0" width="2560" height="1440" />

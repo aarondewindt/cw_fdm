@@ -17,7 +17,7 @@ namespace cw::testing {
         const std::type_info& type_info = typeid(Eigen::MatrixXd);
         auto type_name = get_type_name(type_info);
 
-        fmt::print("Type name {}\n", type_name);
+        CHECK_THAT(type_name, Catch::Equals("Eigen::Matrix<double, -1, -1, 0, -1, -1>"));
     }
 }
 

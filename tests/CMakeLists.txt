@@ -1,7 +1,7 @@
 
 
 add_executable(tests
-        main.cpp
+        test_main.cpp
         test_factorial.cpp
         test_variables_and_tokens.cpp
         test_cw.cpp)

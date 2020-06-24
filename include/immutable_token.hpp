@@ -38,7 +38,7 @@ namespace cw::sim {
         /// Get the variable value.
         /// \return Variable value.
         T get() {
-            return std::any_cast<T>(variable.value);
+            return variable.get<T>();
         }
 
         /// \brief Variable type information.

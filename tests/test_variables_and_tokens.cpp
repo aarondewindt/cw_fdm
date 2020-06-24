@@ -186,7 +186,12 @@ namespace cw::sim::unittests {
 
             WHEN("Create a immutable token from the variable using the correct type.")  {
                 auto immutable_token = variable.create_immutable_token<f64>();
-                
+                WHEN("Reading value from token.") {
+                    f64 value = immutable_token.get();
+                    THEN("Correct value is read.") {
+                        CHECK(value == 8.64);
+                    }
+                }
             }
         }
     }
